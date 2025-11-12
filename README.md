@@ -18,7 +18,7 @@ La solución BlockVoluntariado está diseñada para impactar positivamente a tre
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 BlockVoluntariado ofrece una serie de funcionalidades diseñadas para simplificar el proceso de voluntariado para todos los involucrados:
 
@@ -30,7 +30,7 @@ BlockVoluntariado ofrece una serie de funcionalidades diseñadas para simplifica
 
 ---
 
-## 👥 Autores (Equipo AlmasEnAcción)
+##  Autores (Equipo AlmasEnAcción)
 
 Este proyecto fue desarrollado por el siguiente equipo de estudiantes de la **Universidad Peruana de Ciencias Aplicadas (UPC)**:
 
