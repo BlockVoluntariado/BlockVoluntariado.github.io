@@ -43,4 +43,5 @@ Este proyecto fue desarrollado por el siguiente equipo de estudiantes de la **Un
 | Navarro Rios Gracia Genesis Amada | u202319018 |
 
 **Profesor del Curso:** Deisy Lizbeth Acosta Ticse.
+
 **Fecha de Elaboración:** Noviembre, 2025.
