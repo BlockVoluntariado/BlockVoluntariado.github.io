@@ -42,5 +42,5 @@ Este proyecto fue desarrollado por el siguiente equipo de estudiantes de la **Un
 | Tavara Correa Sebastian Oswaldo | u20241e179 |
 | Navarro Rios Gracia Genesis Amada | u202319018 |
 
-**Profesor del Curso:** Deisy Lizbeth Acosta Ticse
-**Fecha de Elaboración:** Noviembre, 2025
+**Profesor del Curso:** Deisy Lizbeth Acosta Ticse.
+**Fecha de Elaboración:** Noviembre, 2025.
