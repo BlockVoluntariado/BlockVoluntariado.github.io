@@ -1,0 +1,172 @@
+header{
+   
+    color:#024E82;
+    border-bottom: 1px solid #024E82;
+    padding: 1px 40px;
+ 
+}
+
+
+.Menu{
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  
+}
+
+.izquierda{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.centro{
+  flex:2px;                   
+  display:flex;
+  justify-content:center; 
+  gap:40px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.derecha{
+    margin-left: auto;
+}
+
+.hero{
+      display:flex;
+      gap: 100px;
+      padding: 0px 140px;
+      
+
+}
+.primeraImagen{
+     padding: 80px 140px;
+     border-radius: 20%;
+}
+.titulo{
+  
+    color:#024E82;
+    font-size: 80px;
+   
+}
+
+
+.Segmentos{
+ color:#024E82;
+padding: 90px 250px;
+
+
+}
+
+.Segmentos h2{
+    font-size: 55px;
+}
+
+.Estudiante-Info{
+    display: flex;
+    gap: 90px;
+    flex-direction: row-reverse;    
+
+}
+.Estudiante-texto{
+    list-style:none; 
+    font-size: 30px;
+  
+}
+
+.ONG-Info{
+    display: flex;
+    gap:80px;
+
+}
+.ONG-texto{
+     list-style:none;
+    font-size: 30px;
+    
+}
+
+.Psicologo-Info{
+    display: flex;
+    gap:90px;
+    flex-direction: row-reverse;
+
+}
+.Psicologo-texto{
+    list-style:none; 
+    font-size: 30px;
+
+}
+
+.Preguntas{
+    color:#024E82;
+  
+}
+
+.Preguntas h2{
+    padding:  10px 250px;
+    font-size: 55px;
+    
+}
+
+.Preguntas p{
+    width: 70%;             
+  margin: 0 auto;         
+  padding: 12px 0;     
+  border-bottom: 1px solid #024E82;
+  font-size: 28px;
+}
+
+.instalacion{
+     color:#024E82;
+     
+}
+
+.instalacion h2{
+   
+   padding: 12px 0;   
+    font-size: 55px;   
+     padding:  100px 250px; 
+}
+
+.instalacion div{
+    display: flex;
+    padding:  10px 250px; 
+   gap:150px;
+}
+
+.footer{
+    background-color: #024E82;
+    color:white ;
+    padding: 60px 80px;
+}
+.footer-titulo{
+    font-size: 40px;
+    gap:60px;
+
+}
+.footer-info{
+    justify-content: space-between;
+    display: flex;
+   padding: 10px 200px;
+}
+
+.footer-info p{
+    font-size: 18px;    
+}
+.footer-info h4{
+     font-size: 22px; 
+}
+
+.footer-iconos{
+    display: flex;
+    gap:30px;
+   
+}
+
+.final{
+  font-size: 16px;
+    opacity: 0.8;
+    margin-top: 100px;
+
+}
