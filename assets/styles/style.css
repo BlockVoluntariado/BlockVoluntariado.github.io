@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box; 
+}
+
+img {
+  max-width: 100%; 
+  height: auto;   
+}
+
+
 header{
    
     color:#024E82;
@@ -37,7 +47,7 @@ header{
       display:flex;
       gap: 100px;
       padding: 0px 140px;
-      
+      align-items: center;      
 
 }
 .primeraImagen{
@@ -67,22 +77,23 @@ padding: 90px 250px;
     display: flex;
     gap: 90px;
     flex-direction: row-reverse;    
-
+    align-items: center; 
 }
 .Estudiante-texto{
     list-style:none; 
-    font-size: 30px;
+    font-size: 20px; 
   
 }
 
 .ONG-Info{
     display: flex;
     gap:80px;
+    align-items: center; 
 
 }
 .ONG-texto{
      list-style:none;
-    font-size: 30px;
+    font-size: 20px; 
     
 }
 
@@ -90,12 +101,20 @@ padding: 90px 250px;
     display: flex;
     gap:90px;
     flex-direction: row-reverse;
+    align-items: center; 
 
 }
 .Psicologo-texto{
     list-style:none; 
-    font-size: 30px;
+    font-size: 20px; 
 
+}
+
+
+.Estudiante-texto li,
+.ONG-texto li,
+.Psicologo-texto li {
+    margin-bottom: 15px;
 }
 
 .Preguntas{
@@ -169,4 +188,133 @@ padding: 90px 250px;
     opacity: 0.8;
     margin-top: 100px;
 
+}
+
+
+.imagen-Estudiante,
+.ONG-Info img,
+.Psicologo-Info img {
+    flex: 0.5; 
+    max-width: 450px;
+    margin: 0 auto; 
+}
+
+
+/*
+
+ESTILOS PARA MÓVILES (RESPONSIVO) 
+
+*/
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px;
+    }
+    .Menu {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 15px;
+    }
+    .centro {
+        flex-direction: column; 
+        gap: 15px;
+        padding-top: 10px;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .derecha {
+        margin-left: 0; 
+        padding-top: 10px;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+        flex-direction: column; 
+        padding: 20px;
+        gap: 30px;
+    }
+    .titulo {
+        font-size: 42px;
+        text-align: center; 
+    }
+    .primeraImagen {
+        padding: 0; 
+    }
+
+    /* --- Segmentos --- */
+    .Segmentos {
+        padding: 40px 20px;
+    }
+    .Segmentos h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+ 
+    .Estudiante-Info,
+    .ONG-Info,
+    .Psicologo-Info {
+        flex-direction: column; 
+        gap: 20px;
+    }
+    
+
+    .Estudiante-texto,
+    .ONG-texto,
+    .Psicologo-texto {
+        font-size: 16px; 
+        padding: 0;
+    }
+
+    /* --- Preguntas Frecuentes --- */
+    .Preguntas h2 {
+        padding: 20px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .Preguntas p {
+        font-size: 18px;
+        width: 90%; 
+    }
+
+
+    .instalacion {
+        padding: 40px 20px;
+    }
+    .instalacion h2 {
+        padding: 0;
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .instalacion div {
+        flex-direction: column; 
+        padding: 0;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Footer  */
+    .footer {
+        padding: 30px 20px;
+    }
+    .footer-titulo {
+        text-align: center;
+    }
+    .footer-info {
+        flex-direction: column; 
+        padding: 20px 0;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-iconos {
+        justify-content: center; 
+    }
+    .final {
+        margin-top: 40px;
+        text-align: center;
+    }
 }
