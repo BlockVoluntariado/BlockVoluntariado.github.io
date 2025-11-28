@@ -9,7 +9,7 @@ img {
 
 
 header{
-   
+
     color:#024E82;
     border-bottom: 1px solid #024E82;
     padding: 1px 40px;
@@ -22,6 +22,45 @@ header{
   align-items: center;
   font-size: 22px;
   
+}
+
+.Menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    color: orange;
+}
+
+.centro > li {
+  position: relative; 
+}
+
+.Menu-Vertical {
+  position: absolute;   
+  display: none;       
+  top: 100%;            
+  left: 0;
+  background-color: white;
+  border: 1px solid #024E82;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.Menu-Vertical li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 18px; 
+}
+
+
+.centro > li:hover .Menu-Vertical {
+  display: block; 
 }
 
 .izquierda{
@@ -183,6 +222,15 @@ padding: 90px 250px;
    
 }
 
+.instalacion a,
+.footer.iconos a {
+    display: inline-block;
+    line-height: 0;
+    opacity: 0.8;
+}
+
+
+
 .final{
   font-size: 16px;
     opacity: 0.8;
@@ -190,7 +238,108 @@ padding: 90px 250px;
 
 }
 
+.txt-reseñas {
+    color: #024E82;
+}
+/* --- CORRECCIÓN Y MEJORAS DE RESEÑAS --- */
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
 
+.reseña-card {
+    background-color: white; /* Fondo blanco para contraste */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    color: #024E82;
+}
+
+.cargo-usuario {
+    color: orange; 
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* --- ESTILOS NUEVOS PARA PREGUNTAS FRECUENTES--- */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid #ddd;
+    overflow: hidden; /* Importante para la animación */
+}
+
+.faq-question {
+    background-color: #fff;
+    color: #024E82;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f1f8ff;
+}
+
+.faq-answer {
+    max-height: 0; /* Oculto por defecto */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Animación suave */
+    background-color: #f9f9f9;
+}
+
+.faq-answer p {
+    padding: 20px;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    width: 100%; /* Asegura que ocupe el ancho */
+    border-bottom: none; /* Quitamos el borde que tenías en p genéricos */
+}
+
+/* Icono de + / - */
+.icon {
+    font-size: 24px;
+    color: orange;
+    transition: transform 0.3s;
+}
+
+/* Clase activa (se añade con JS) */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Altura suficiente para mostrar el texto */
+}
+
+.faq-item.active .icon {
+    transform: rotate(45deg); /* Gira el + para convertirlo en X */
+}
+
+
+.texto-ayuda:hover {
+    transform: translateY(-5px);
+}
 .imagen-Estudiante,
 .ONG-Info img,
 .Psicologo-Info img {
@@ -199,7 +348,6 @@ padding: 90px 250px;
     margin: 0 auto; 
 }
 
-
 /*
 
 ESTILOS PARA MÓVILES (RESPONSIVO) 
@@ -207,7 +355,27 @@ ESTILOS PARA MÓVILES (RESPONSIVO)
 */
 
 @media (max-width: 768px) {
+.Menu-Vertical {
+        position: static; 
+        display: block;  
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        background-color: transparent;
+    }
 
+    .Menu-Vertical li a {
+        padding: 10px 0;
+    }
+    
+
+    .reseñas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reseñas h2 {
+        font-size: 32px;
+    }
     header {
         padding: 10px 20px;
     }
@@ -295,7 +463,15 @@ ESTILOS PARA MÓVILES (RESPONSIVO)
         gap: 20px;
         align-items: center;
     }
-
+    .reseñas-grid {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        gap: 20px;
+    }
+    
+    .faq-question {
+        font-size: 16px;
+        padding: 15px;
+    }
     /* Footer  */
     .footer {
         padding: 30px 20px;

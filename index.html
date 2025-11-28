@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <link rel="icon" href="assets/images/LogoBlockVoluntariado.jpg" type="image/jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-    
         <title>BlockVoluntariado</title>
         <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/icon">
+        <script src="assets/scripts/app.js" defer></script>
     </head>
     
     <body>
@@ -21,12 +21,22 @@
             </div>
         
             
-        <ul class="centro">
-            <li><strong>ONG's</strong></li>
-            <li><strong>Psicólogos</strong></li>
-            <li><strong>Reseñas</strong></li>     
+<ul class="centro">
+    <li>
+        <a href="#"><strong>Beneficios</strong></a> 
+        
+        <ul class="Menu-Vertical">
+            <li><a href="#estudiantes">Para Estudiantes</a></li>
+            <li><a href="#ongs">Para ONG's</a></li>
+            <li><a href="#psicologos">Para Psicólogos</a></li>
+            
         </ul>
-            <p class="derecha"><strong>Ayuda</strong></p>
+        
+    </li>
+    <li><a href="#reseñas"><strong>Reseñas</strong></a></li>
+    <a href="#instalar"><strong>Descarga Ahora</strong></a>
+</ul>
+            <p class="derecha"><a href="#ayuda"><strong>Ayuda</strong></a></p>
         
         </section>
         </header>
@@ -40,7 +50,7 @@
         </section>
         
         <section class="Segmentos">
-            <article class="Estudiante">
+            <article class="Estudiante" id="estudiantes">
             <h2>Como estudiante</h2>
 
             <div class="Estudiante-Info">
@@ -59,7 +69,7 @@
             
             </article>
 
-            <article class="ONG">
+            <article class="ONG" id="ongs">
                 <h2>Como ONG</h2>
                 <div class="ONG-Info">
                 <img src="assets/images/ONGs.jpg" width="300">
@@ -73,8 +83,8 @@
                 </div>
             </article>
 
-            <article class="Psicologo">
-                <h2>Como Psicologo</h2>
+            <article class="Psicologo" id="psicologos">
+                <h2>Como Psicólogo</h2>
                 <div class="Psicologo-Info">    
             
                 <img src="assets/images/Psicologos.jpg" width="300">
@@ -89,21 +99,78 @@
             </article>
 
         </section>
-
-        <section class="Preguntas">
+<section class="reseñas" id="reseñas">
+        <div class="reseñas-container">
+            <h2 class ="txt-reseñas">Lo que dicen nuestros <span>usuarios</span></h2>
+        
+            <div class="reseñas-grid"> <div class="reseña-card">
+                <h3 class ="reseña-card__title">Carlos Mendoza</h3>
+                <p class="cargo-usuario">Estudiante de Ingeniería</p>
+                <p class ="reseña-card__text">"Me encantó lo fácil que fue encontrar un voluntariado que se ajuste a mis horarios. Además, las medallas y el ranking me motivan a seguir ayudando y sumando horas para mi CV."</p>
+                </div>
+            
+            <div class="reseña-card">
+                <h3 class="reseña-card__title">Fundación "Manos Unidas"</h3>
+                <p class="cargo-usuario">Coordinación de Proyectos</p>
+                <p class="reseña-card__text">"Como ONG, la gestión de proyectos es increíblemente rápida aquí. Ver los perfiles detallados de los voluntarios nos da mucha confianza y nos ahorra tiempo administrativo."</p>
+            </div>
+            
+            <div class="reseña-card">
+                <h3 class="reseña-card__title">Lic. Ana Torres</h3>
+                <p class="cargo-usuario">Psicóloga Clínica</p>
+                <p class="reseña-card__text">"La herramienta para dar seguimiento emocional a los voluntarios es única. Me permite intervenir justo cuando se necesita y coordinar talleres preventivos con las ONGs fácilmente."</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+        <section class="Preguntas" id="ayuda">
             <h2>Preguntas frecuentes</h2>
-            <p>¿Cómo se que las ONG’s son confiables?</p>
-            <p>¿Cómo me retiro en un voluntariado en el que estoy inscrito?</p>
-            <p>¿Qué beneficios tengo si me registro con mi cuenta institucional?</p>
-            <p>¿Cómo el sistema confirma que soy un usuario confiable?</p>
-            <p>¿El certificado tiene algun costo?</p>
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo sé que las ONG’s son confiables?<span class="icon">+</span></button>
+                    <div class ="faq-answer">
+                        <p>Todas las ONGs pasan por un riguroso proceso de verificación donde validamos su registro legal, antecedentes y reputación antes de permitirles publicar proyectos en la plataforma.</p>
+                    </div>
+                </div>
+            
+            <div class="faq-item">
+                    <button class="faq-question">¿Cómo me retiro de un voluntariado?<span class="icon">+</span></button>
+                    <div class ="faq-answer">
+                        <p>Puedes retirarte desde tu panel de usuario en la sección "Mis Voluntariados". Te recomendamos avisar con 48 horas de anticipación para no afectar tu calificación en el ranking.</p>
+                    </div>
+                </div>
+
+        <div class="faq-item">
+                    <button class="faq-question">¿Qué beneficios tengo con mi cuenta institucional?<span class="icon">+</span></button>
+                    <div class ="faq-answer">
+                        <p>Al registrarte con tu correo universitario, tus horas de voluntariado se validan automáticamente para los créditos extracurriculares de tu universidad.</p>
+                    </div>
+                </div>
+
+            <div class="faq-item">
+                    <button class="faq-question">¿Cómo sé que las ONG’s son confiables?<span class="icon">+</span></button>
+                    <div class ="faq-answer">
+                        <p>Utilizamos un sistema de reputación basado en asistencia, puntualidad y evaluaciones de las ONGs al finalizar cada proyecto.</p>
+                    </div>
+                </div>
+            
+                <div class="faq-item">
+                    <button class="faq-question">¿El certificado tiene algún costo?<span class="icon">+</span></button>
+                    <div class ="faq-answer">
+                        <p>No, los certificados digitales emitidos por las ONGs y verificados por BlockVoluntariado son totalmente gratuitos para los estudiantes activos.</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-        <section class="instalacion">
+        <section class="instalacion" id = "instalar">
             <h2>No pierdas la oportunidad y vive la experiencia de usar BlockVoluntariado</h2>
             <div>
-            <img src="assets/images/GooglePlay.png" width="500" height="245">
-            <img src="assets/images/AppStore.png" width="555" height="240">
+            <a href="https://play.google.com/store"><img src="assets/images/GooglePlay.png" width="500" height="245"></a>
+            <a href="https://www.apple.com/app-store/"><img src="assets/images/AppStore.png" width="555" height="240"></a>
             </div>
         
 
@@ -140,9 +207,9 @@
                 <p>(01) 987654312</p>
                 <p>+51 111122212</p>
                 <div class="footer-iconos">
-                <img src="assets/images/Gmail.png" width="30">
-                <img src="assets/images/Instagram.jpg" width="30">
-                <img src="assets/images/Facebook.jpg" width="30">
+                <a href="https://www.gmail.com/"><img src="assets/images/Gmail.png" width="30"></a>
+                <a href="https://www.instagram.com/"><img src="assets/images/Instagram.jpg" width="30"></a>
+                <a href="https://www.facebook.com/"><img src="assets/images/Facebook.jpg" width="30"></a>
                 </div>
             </div>
             </div>
@@ -153,3 +220,4 @@
         </footer>
     
     </body>
+</html>
