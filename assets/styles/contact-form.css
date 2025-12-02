@@ -14,7 +14,8 @@ body {
 
 .form-box {
     width: 60%;
-    padding: 40px;
+    margin: auto;
+    padding: 20px;
     color: white;
     margin-left: 80px;
 }
