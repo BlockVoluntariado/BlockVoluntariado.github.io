@@ -29,6 +29,12 @@ const form = document.getElementById("contactForm");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    const captchaToken = document.querySelector('[name="h-captcha-response"]').value;
+        if (!captchaToken) {
+        alert("Por favor primero confirma que no eres un robot.");
+        return;
+        }
+
     const nombre = document.getElementById("nombre").value;
     const apellido = document.getElementById("apellido").value;
 
@@ -37,6 +43,28 @@ form.addEventListener("submit", (e) => {
     const asunto = document.getElementById("asunto").value;
     const descripcion = document.getElementById("descripcion").value;
 
+    //Verificador de vacio
+    if(nombre ===""){
+        alert("Nombre vacio");
+        return;
+    }
+    if(apellido ===""){
+        alert("Apellido vacio");
+        return;
+    }
+    if(email ===""){
+        alert("email vacio");
+        return;
+    }
+    if(asunto ===""){
+        alert("asunto vacio");
+        return;
+    }
+    if(descripcion ===""){
+        alert("descripcion vacia");
+        return;
+    }
+    
     const dbRef = ref(db, "contactos");
     const nuevo = push(dbRef);
 
@@ -58,3 +86,4 @@ form.addEventListener("submit", (e) => {
         alert("Ocurrió un error al guardar");
     });
 });
+
