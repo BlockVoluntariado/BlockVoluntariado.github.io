@@ -86,3 +86,7 @@ form.addEventListener("submit", (e) => {
         alert("Ocurrió un error al guardar");
     });
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4da03c3472a3aa67e2366677fb64fb5a0a30382e

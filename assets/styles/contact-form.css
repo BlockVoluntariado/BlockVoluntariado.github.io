@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4da03c3472a3aa67e2366677fb64fb5a0a30382e
 body {
     margin: 0;
     font-family: 'Inria Sans', sans-serif;
@@ -93,6 +96,7 @@ textarea {
     width: 100%;
     margin: 0;
 }
+<<<<<<< HEAD
 
 /* =========================================
 DISEÑO RESPONSIVE 
@@ -170,3 +174,5 @@ DISEÑO RESPONSIVE
         margin-bottom: 20px;
     }
 }
+=======
+>>>>>>> 4da03c3472a3aa67e2366677fb64fb5a0a30382e
