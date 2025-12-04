@@ -320,6 +320,36 @@ padding: 90px 250px;
     border-bottom: none; /* Quitamos el borde que tenías en p genéricos */
 }
 
+.contenido {
+    color: #024E82;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenido .videos-container {
+    color: #024E82;
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.contenido .About-the-product,
+.contenido .About-the-team {
+    flex: 1;
+}
+
+.contenido h3 {
+    margin-bottom: 15px;
+}
+
+
+
+.contenido iframe {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 /* Icono de + / - */
 .icon {
     font-size: 24px;
@@ -420,7 +450,7 @@ ESTILOS PARA MÓVILES (RESPONSIVO)
         margin-bottom: 30px;
     }
 
- 
+
     .Estudiante-Info,
     .ONG-Info,
     .Psicologo-Info {
@@ -446,6 +476,7 @@ ESTILOS PARA MÓVILES (RESPONSIVO)
         font-size: 18px;
         width: 90%; 
     }
+
 
 
     .instalacion {

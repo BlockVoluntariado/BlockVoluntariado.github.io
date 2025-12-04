@@ -8,15 +8,15 @@ import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-apiKey: "AIzaSyAhD4Ljx8vkN3HM2VL5SJ3HSbY8xgCewTo",
-authDomain: "blockvoluntariado.firebaseapp.com",
-projectId: "blockvoluntariado",
-storageBucket: "blockvoluntariado.firebasestorage.app",
-messagingSenderId: "780129250896",
-appId: "1:780129250896:web:9c61c03b5c98667ceceb55",
-measurementId: "G-PWSKFPJGDF",
+  apiKey: "AIzaSyAhD4Ljx8vkN3HM2VL5SJ3HSbY8xgCewTo",
+  authDomain: "blockvoluntariado.firebaseapp.com",
+  projectId: "blockvoluntariado",
+  storageBucket: "blockvoluntariado.firebasestorage.app",
+  messagingSenderId: "780129250896",
+  appId: "1:780129250896:web:9c61c03b5c98667ceceb55",
+  measurementId: "G-PWSKFPJGDF",
 
-databaseURL: "https://blockvoluntariado-default-rtdb.firebaseio.com/"
+  databaseURL: "https://blockvoluntariado-default-rtdb.firebaseio.com/"
 }
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
