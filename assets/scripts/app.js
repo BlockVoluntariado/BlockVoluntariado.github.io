@@ -9,3 +9,6 @@ preguntas.forEach(pregunta => {
         item.classList.toggle('active');
     });
 });
+
+
+

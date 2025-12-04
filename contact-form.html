@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BV - Formulario de contacto</title>
+    <link rel="stylesheet" href="assets/styles/contact-form.css">
+    <!--Solo para el font-->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <!--Solo para el formulario-->
+    <script type="module" src="assets/scripts/contactForm.js" defer></script>
+    <!--para el hcaptcha-->
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-box">
+            <h1>Formulario de contacto</h1>
+
+            <h2>Datos de la persona</h2>
+
+            <form id="contactForm">
+                
+                <div class="fila">
+                    <div class="fila-espaciado">
+                        <label>Nombre:
+                        <input type="text" id="nombre" placeholder="nombre">
+                        </label>
+                        <label>Apellido:
+                        <input type="text" id="apellido" placeholder="apellido">
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="fila">
+                    <label>Email:</label>
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                </div>
+
+                <div class="fila">
+                    <label>Telefono:</label>
+                    <input type="text" id="telefono" placeholder="+51 999-999-999">
+                </div>
+
+                <h2>Mensaje</h2>
+
+                <div class="fila">
+                    <label>Asunto:</label>
+                    <input type="text" id="asunto" placeholder="Consulta">
+                </div>
+
+                <div class="fila">
+                    <label>Descripcion:</label>
+                    <textarea id="descripcion" placeholder="descripcion"></textarea>
+                </div>
+
+                <h2>Verificacion</h2>
+
+                <div class="captcha">
+                    <div class="h-captcha" data-sitekey="d7f6f17e-6988-4808-88d2-e7b0ffd2f5ae"></div>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+
+            </form>
+        </div>
+
+        <div class="logo-img">
+            <a href="index.html">
+                <img src="assets/images/image.png" alt="Logo BV">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
